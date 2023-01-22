@@ -26,7 +26,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+NestJS 프레임워크로 간단한 블로그 서비스 웹 어플리케이션 서버를 만들었습니다.
 
 ## Installation
 
