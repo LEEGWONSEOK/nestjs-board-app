@@ -15,7 +15,6 @@ import { CreateBoardDto } from './dtos/create-board.dto';
 import { UpdateBoardDto } from './dtos/update-board.dto';
 import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
 import { Board } from './board.entity';
-import { UpdateResult } from 'typeorm';
 
 @Controller('/boards')
 export class BoardsController {
