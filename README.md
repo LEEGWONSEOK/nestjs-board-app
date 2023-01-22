@@ -28,6 +28,16 @@
 
 NestJS 프레임워크로 간단한 블로그 서비스 웹 어플리케이션 서버를 만들었습니다.
 
+<br>
+
+## Skill Set
+
+- Programming : `Typescript` , `Nest.js`
+- Database & ORM : `PostgreSQL` , `TypeORM`
+- API Test : `Postman`
+
+<br>
+
 ## Installation
 
 ```bash
@@ -47,6 +57,8 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+<br>
+
 ## Test
 
 ```bash
@@ -60,6 +72,4 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+<br>
