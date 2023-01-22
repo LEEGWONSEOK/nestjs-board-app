@@ -16,14 +16,6 @@ NestJS 프레임워크로 간단한 블로그 서비스 웹 어플리케이션 �
 
 <br>
 
-## Installation
-
-```bash
-
-```
-
-<br>
-
 ## Installation & Running the app
 
 ```bash
