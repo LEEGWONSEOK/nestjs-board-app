@@ -9,6 +9,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { AuthCredentialsDto } from './dtos/auth-credential.dto';
+import { JwtService } from '@nestjs/jwt';
 
 @CustomRepository(User)
 export class UserRepository extends Repository<User> {
@@ -35,12 +36,19 @@ export class UserRepository extends Repository<User> {
     }
   }
 
-  async signIn(authCredentialsDto: AuthCredentialsDto): Promise<string> {
+  async signIn(
+    jwtService: JwtService,
+    authCredentialsDto: AuthCredentialsDto,
+  ): Promise<{ accessToken: string }> {
     const { email, password } = authCredentialsDto;
     const user = await this.findOne({ where: { email } });
 
     if (user && (await bcrypt.compare(password, user.password))) {
-      return `sign in success`;
+      // 유저 토큰 생성 (secret + payload)
+      const payload = { email };
+      const accessToken = await jwtService.sign(payload);
+
+      return { accessToken };
     } else {
       throw new UnauthorizedException(`sign in failed`);
     }
