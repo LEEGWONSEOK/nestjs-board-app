@@ -3,11 +3,11 @@ import { Board } from 'src/boards/board.entity';
 
 export const typeORMConfig: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: 'localhost',
+  host: 'db',
   port: 5432,
   username: 'postgres',
   password: 'postgres',
-  database: 'nest-board-app',
+  database: 'nest_board_app',
   entities: [__dirname + '/../**/*.entity.{js, ts}', Board],
   synchronize: true,
 };
