@@ -16,6 +16,10 @@ NestJS 프레임워크로 간단한 블로그 서비스 웹 어플리케이션 �
 - JWT Token 형태로 로그인/로그아웃 구현.
 - 권한 및 액세스 제어 구현.
 
+#### 컨테이너 생성하여 WAS, DB 격리 구현
+
+- Docker Compose 활용하여 컨테이너 관리
+
 <br>
 
 ## Skill Set
@@ -23,6 +27,7 @@ NestJS 프레임워크로 간단한 블로그 서비스 웹 어플리케이션 �
 - Programming : `Typescript` , `Nest.js`
 - Database & ORM : `PostgreSQL` , `TypeORM`
 - API Test : `Postman`
+- Container : `Docker-compose`
 
 <br>
 
