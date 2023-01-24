@@ -1,9 +1,11 @@
+import { Board } from 'src/boards/board.entity';
 import {
   BaseEntity,
   Column,
   Entity,
   Unique,
   PrimaryGeneratedColumn,
+  OneToMany,
 } from 'typeorm';
 
 @Entity()
@@ -20,4 +22,7 @@ export class User extends BaseEntity {
 
   @Column()
   nickname: string;
+
+  @OneToMany(() => Board, (board) => board.user, { eager: false })
+  boards: Board[];
 }
